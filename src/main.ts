@@ -42,13 +42,13 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('player', '/space-badger.png');
-    this.load.image('alien', '/polecat.png');
-    this.load.image('bullet', '/star.png');
+    this.load.image('player', 'space-badger.png');
+    this.load.image('alien', 'polecat.png');
+    this.load.image('bullet', 'star.png');
 
     // Load all playlist tracks
     this.playlist.forEach((track, index) => {
-      this.load.audio(`track${index}`, `/${track}`);
+      this.load.audio(`track${index}`, `${track}`);
     });
   }
 
